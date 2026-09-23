@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventory Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+
+        <div class="logo">
+            <div class="logo-icon">📦</div>
+            <div>
+                <h2>Inventory</h2>
+                <span>Management</span>
+            </div>
+        </div>
+
+        <nav>
+            <a href="index.html" class="nav-link active">
+                <span>📊</span>
+                Dashboard
+            </a>
+
+            <a href="products.html" class="nav-link">
+                <span>📦</span>
+                Products
+            </a>
+        </nav>
+
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="top-header">
+
+            <div>
+                <p class="welcome">Welcome back 👋</p>
+                <h1>Inventory Dashboard</h1>
+            </div>
+
+            <a href="products.html" class="header-btn">
+                + Add Product
+            </a>
+
+        </header>
+
+
+        <!-- Dashboard Cards -->
+        <section class="dashboard">
+
+            <div class="card">
+                <div class="card-icon purple">📦</div>
+
+                <div>
+                    <h3>Total Products</h3>
+                    <p id="totalProducts">0</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon blue">📊</div>
+
+                <div>
+                    <h3>Total Stock</h3>
+                    <p id="totalStock">0</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon red">⚠️</div>
+
+                <div>
+                    <h3>Low Stock</h3>
+                    <p id="lowStock">0</p>
+                </div>
+            </div>
+
+
+            <div class="card">
+                <div class="card-icon green">₹</div>
+
+                <div>
+                    <h3>Inventory Value</h3>
+                    <p id="inventoryValue">₹0</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- Quick Actions -->
+        <section class="quick-section">
+
+            <div class="section-header">
+                <div>
+                    <h2>Quick Actions</h2>
+                    <p>Manage your inventory easily</p>
+                </div>
+            </div>
+
+
+            <div class="quick-actions">
+
+                <a href="products.html" class="quick-card">
+
+                    <div class="quick-icon purple">
+                        📦
+                    </div>
+
+                    <div>
+                        <h3>View Products</h3>
+                        <p>View and manage all products</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+
+                </a>
+
+
+                <a href="products.html" class="quick-card">
+
+                    <div class="quick-icon green">
+                        ＋
+                    </div>
+
+                    <div>
+                        <h3>Add Product</h3>
+                        <p>Add a new product to inventory</p>
+                    </div>
+
+                    <span class="arrow">→</span>
+
+                </a>
+
+            </div>
+
+        </section>
+
+
+        <!-- Recent Products -->
+        <section class="recent-section">
+
+            <div class="section-header">
+
+                <div>
+                    <h2>Products Overview</h2>
+                    <p>Your current inventory</p>
+                </div>
+
+                <a href="products.html" class="view-all">
+                    View All →
+                </a>
+
+            </div>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Category</th>
+                            <th>Price</th>
+                            <th>Stock</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="dashboardTable">
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
